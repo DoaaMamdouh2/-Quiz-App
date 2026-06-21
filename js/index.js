@@ -29,8 +29,8 @@
  * - startQuiz() - Main function to start quiz
  */
 
-import Quiz from "./Quiz.js";
-import Question from "./Question.js";
+import Quiz from "./quiz.js";
+import Question from "./question.js";
 
 
 // ============================================
