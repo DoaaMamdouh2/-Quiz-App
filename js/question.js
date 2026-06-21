@@ -271,13 +271,6 @@ export default class Question {
       // 5. Add warning class when <= 5 seconds remaining
       if (this.timeRemaining <= 5) {
         timerBadge.classList.add("warning");
-
-        if (this.timeRemaining === 5) {
-          const warningSound = new Audio(
-            "./sounds/mixkit-tick-tock-clock-timer-1048.wav",
-          );
-          warningSound.play();
-        }
       }
 
       // 6. Time is up — stop and handle
@@ -292,6 +285,7 @@ export default class Question {
   // Use clearInterval(this.timerInterval)
   stopTimer() {
     clearInterval(this.timerInterval);
+    
   }
 
   // TODO: Create handleTimeUp() method
